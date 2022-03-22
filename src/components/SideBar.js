@@ -8,6 +8,7 @@ import ContentRowProducts from './ContentRowProducts';
 import LastProductInDb from './LastProductInDb';
 import CategoriesInDb from './CategoriesInDb';
 import Chart from './Chart';
+import Chart2 from './Chart2';
 import NotFound from './NotFound';
 
 
@@ -31,7 +32,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <Link className="nav-link" to="/">
                         {/* <i className="fas fa-balance-scale"></i> */}
-                        <span>Secciones</span>
+                        <span>Inicio</span>
                     </Link>
                 </li>
 
@@ -78,6 +79,12 @@ function SideBar(){
                     <Link className="nav-link" to="/movie-chart">
                         {/* <i className="fas fa-fw fa-table"></i> */}
                         <span>Lista de Productos</span>
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/movie-chart2">
+                        {/* <i className="fas fa-fw fa-table"></i> */}
+                        <span>Lista de Usuarios</span>
                     </Link>
                 </li>
 
@@ -131,7 +138,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
                                 </div>
                                 <ContentRowProducts />
                             </div>
@@ -144,7 +151,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
                                 </div>
                                 <div className="row">
                                     <LastProductInDb />
@@ -159,7 +166,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
                                 </div>
                                 <div className="row">
                                     <CategoriesInDb />
@@ -174,13 +181,30 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
                                 </div>
                                 <Chart />
                             </div>                            
                         </div>
                     </div>    
                 </Route>  
+
+                <Route path="/movie-chart2">
+                    <div id="content-wrapper" className="d-flex flex-column">
+                        <div id="content">
+                            <TopBar />
+                            <div className="container-fluid">
+                                <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
+                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
+                                </div>
+                                <Chart2 />
+                            </div>                            
+                        </div>
+                    </div>    
+                </Route>  
+
+
+
                 <Route>
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
