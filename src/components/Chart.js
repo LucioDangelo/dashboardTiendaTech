@@ -8,7 +8,7 @@ function Chart (){
     //const [ usersInDB , setUsersInDB ] = useState([]);
     
     useEffect(() => {
-         fetch("https://la-guarida-del-dragon.herokuapp.com/api/products")
+         fetch("https://grupo-8-digital-tech.herokuapp.com/api/products")
              .then(response => response.json())
              .then(products => {
                  setProductsInDB(products.products);
@@ -36,6 +36,7 @@ function Chart (){
                                 <th>NOMBRE</th>
                                 <th>PRECIO</th>
                                 <th>CATEGORIA</th>
+                                <th>ESTADO</th>
                             </tr>
                         </thead>
                         <tbody>

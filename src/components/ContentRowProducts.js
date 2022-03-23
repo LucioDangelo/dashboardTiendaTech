@@ -13,7 +13,7 @@ function ContentRowProducts(){
 	useEffect( () => {
 		console.log("%cme monté", "color: green");
         console.log(process.env)
-		fetch(`https://la-guarida-del-dragon.herokuapp.com/api/products/`)
+		fetch(`https://grupo-8-digital-tech.herokuapp.com/api/products`)
 			.then(response => response.json())
 			.then(products => {
 				setProducts(products.count);
@@ -30,7 +30,7 @@ function ContentRowProducts(){
      	.catch(error => {
  		console.error();
 	 	})
-         fetch(`https://la-guarida-del-dragon.herokuapp.com/api/products/categories`)
+         fetch(`https://grupo-8-digital-tech.herokuapp.com/api/products/categories`)
 			.then(response => response.json())
 			.then(categories => {
 				setCategories(categories.count);
