@@ -29,7 +29,7 @@ function Chart (){
             <div className="card-body">
                 <div className="table-responsive">
                     <h5 className="mb-10 font-weight-bold text-gray-800">Lista de Productos</h5>
-                    <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">                        
+                    <table className="table table-bordered " id="dataTable" width="100%" cellSpacing="0">                        
                         <thead>
                             <tr>
                                 <th>ID</th>

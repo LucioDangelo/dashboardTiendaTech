@@ -43,7 +43,7 @@ function ContentRowProducts(){
     /* <!-- Movies in DB --> */
 
     let productsInDB = {
-        title: 'Productos en DB',
+        title: 'Cantidad de Productos en DB',
         color: 'primary', 
         quantity: products,
         icon: 'fas fa-cart-plus'
@@ -53,8 +53,8 @@ function ContentRowProducts(){
     /* <!-- Total awards --> */
 
     let usersInDb = {
-        title:'Usuarios en DB', 
-        color:'success', 
+        title:'Cantidad de Usuarios en DB', 
+        color:'primary', 
         quantity: users,
         icon:'fas fa-id-card'
     }
@@ -62,8 +62,8 @@ function ContentRowProducts(){
     /* <!-- Actors quantity --> */
 
     let categoriesInDB = {
-        title: 'Categorías en DB' ,
-        color: 'warning',
+        title: 'Cantidad de Categorías en DB' ,
+        color: 'primary',
         quantity: categories,
         icon: 'fas fa-list'
     }

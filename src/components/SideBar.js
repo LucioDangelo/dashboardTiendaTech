@@ -8,7 +8,7 @@ import CategoriesInDb from './CategoriesInDb';
 import Chart from './Chart';
 import Chart2 from './Chart2';
 import NotFound from './NotFound';
-
+import Errors from './Errors';
 
 function SideBar(){
     return(
@@ -33,7 +33,7 @@ function SideBar(){
                     </Link>
                 </li>              
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" to="/last-movie-in-db">
+                    <Link className="nav-link collapsed" to="/last-product-in-db">
                         <span>Ultimo Producto</span>
                     </Link>
                 </li>              
@@ -44,13 +44,18 @@ function SideBar(){
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/movie-chart">
+                    <Link className="nav-link" to="/product-chart">
                         <span>Lista de Productos</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/movie-chart2">
+                    <Link className="nav-link" to="/user-chart">
                         <span>Lista de Usuarios</span>
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/errors">
+                        <span>Reportar Error</span>
                     </Link>
                 </li>
 
@@ -67,20 +72,20 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
                                 </div>
                                 <ContentRowProducts />
                             </div>
                         </div>
                     </div>    
                 </Route>
-                <Route path="/last-movie-in-db">
+                <Route path="/last-product-in-db">
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
                                 </div>
                                 <div className="row">
                                     <LastProductInDb />
@@ -95,7 +100,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
                                 </div>
                                 <div className="row">
                                     <CategoriesInDb />
@@ -104,13 +109,13 @@ function SideBar(){
                         </div>
                     </div>    
                 </Route>
-                <Route path="/movie-chart">
+                <Route path="/product-chart">
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
                                 </div>
                                 <Chart />
                             </div>                            
@@ -118,15 +123,29 @@ function SideBar(){
                     </div>    
                 </Route>  
 
-                <Route path="/movie-chart2">
+                <Route path="/user-chart">
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Tech DB</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
                                 </div>
                                 <Chart2 />
+                            </div>                            
+                        </div>
+                    </div>    
+                </Route>  
+
+                <Route path="/errors">
+                    <div id="content-wrapper" className="d-flex flex-column">
+                        <div id="content">
+                            <TopBar />
+                            <div className="container-fluid">
+                                <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
+                                </div>
+                                <Errors />
                             </div>                            
                         </div>
                     </div>    
