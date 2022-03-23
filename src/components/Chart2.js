@@ -7,7 +7,7 @@ function Chart (){
 
 
      useEffect(() => {
-        fetch("https://la-guarida-del-dragon.herokuapp.com/api/users")
+        fetch("https://grupo-8-digital-tech.herokuapp.com/api/users")
             .then(response => response.json())
             .then(users => {
                 setUsersInDB(users.users);

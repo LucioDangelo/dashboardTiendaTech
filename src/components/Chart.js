@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import ChartRow from './ChartRow';
-import ChartRow2 from './ChartRow2';
+//import ChartRow2 from './ChartRow2';
 
 function Chart (){
 
     const [ productsInDB , setProductsInDB ] = useState([]);
-    const [ usersInDB , setUsersInDB ] = useState([]);
+    //const [ usersInDB , setUsersInDB ] = useState([]);
     
     useEffect(() => {
          fetch("https://la-guarida-del-dragon.herokuapp.com/api/products")
@@ -15,13 +15,13 @@ function Chart (){
              })
      },[]);
 
-     useEffect(() => {
-        fetch("https://la-guarida-del-dragon.herokuapp.com/api/users")
-            .then(response => response.json())
-            .then(users => {
-                setUsersInDB(users.users);
-            })
-    },[]);
+    //  useEffect(() => {
+    //     fetch("https://grupo-8-digital-tech.herokuapp.com/api/users")
+    //         .then(response => response.json())
+    //         .then(users => {
+    //             setUsersInDB(users.users);
+    //         })
+    // },[]);
 
     return (
         /* <!-- DataTales Example --> */
