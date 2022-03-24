@@ -19,8 +19,8 @@ function ContentRowTop(){
 					{/*<!-- Content Row Movies-->*/}
 					<ContentRowProducts />				
 					<ContentRowCenter />
-					<Chart />	
-					<Chart2 />	
+					{/* <Chart />	
+					<Chart2 />	 */}
 				</div>
 				{/*<!--End Content Row Top-->*/}
 

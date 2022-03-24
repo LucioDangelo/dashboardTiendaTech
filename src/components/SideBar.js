@@ -5,6 +5,7 @@ import TopBar from './TopBar';
 import ContentRowProducts from './ContentRowProducts';
 import LastProductInDb from './LastProductInDb';
 import CategoriesInDb from './CategoriesInDb';
+import StatusInDb from './StatusInDb';
 import Chart from './Chart';
 import Chart2 from './Chart2';
 import NotFound from './NotFound';
@@ -40,6 +41,12 @@ function SideBar(){
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/genres-in-db">
                         <span>Cantidad de Productos x Genero</span>
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="nav-link collapsed" to="/status-in-db">
+                        <span>Cantidad de Productos x Status</span>
                     </Link>
                 </li>
 
@@ -94,6 +101,8 @@ function SideBar(){
                         </div>
                     </div>    
                 </Route>
+
+
                 <Route path="/genres-in-db">
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
@@ -109,6 +118,24 @@ function SideBar(){
                         </div>
                     </div>    
                 </Route>
+
+                <Route path="/status-in-db">
+                    <div id="content-wrapper" className="d-flex flex-column">
+                        <div id="content">
+                            <TopBar />
+                            <div className="container-fluid">
+                                <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
+                                    <h1 className="h3 mb-0 text-gray-800">Digital Tech</h1>
+                                </div>
+                                <div className="row">
+                                    <StatusInDb />
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>    
+                </Route>
+
+
                 <Route path="/product-chart">
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
